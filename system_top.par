@@ -1,0 +1,149 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+MASAAKI-PC::  Sun Feb 23 11:49:32 2014
+
+par -w -intstyle ise -ol high -mt off system_top_map.ncd system_top.ncd
+system_top.pcf 
+
+
+Constraints file: system_top.pcf.
+Loading device for application Rf_Device from file '7z010.nph' in environment C:\HDL\Xilinx\14.7\ISE_DS\ISE\.
+   "system_top" is an NCD, version 3.2, device xc7z010, package clg400, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.08 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           1 out of 32      3%
+   Number of External IOB33s                 4 out of 100     4%
+      Number of LOCed IOB33s                 4 out of 4     100%
+
+   Number of External IOPADs               130 out of 130   100%
+      Number of LOCed IOPADs               130 out of 130   100%
+
+   Number of PS7s                            1 out of 1     100%
+   Number of Slices                         81 out of 4400    1%
+   Number of Slice Registers               190 out of 35200   1%
+      Number used as Flip Flops            190
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                    244 out of 17600   1%
+   Number of Slice LUT-Flip Flop pairs     265 out of 17600   1%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+Starting initial Timing Analysis.  REAL time: 25 secs 
+Finished initial Timing Analysis.  REAL time: 25 secs 
+
+Starting Router
+
+
+Phase  1  : 2996 unrouted;      REAL time: 26 secs 
+
+Phase  2  : 1145 unrouted;      REAL time: 27 secs 
+
+Phase  3  : 379 unrouted;      REAL time: 27 secs 
+
+Phase  4  : 379 unrouted; (Setup:0, Hold:726, Component Switching Limit:0)     REAL time: 30 secs 
+
+Updating file: system_top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:472, Component Switching Limit:0)     REAL time: 31 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:472, Component Switching Limit:0)     REAL time: 31 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:472, Component Switching Limit:0)     REAL time: 31 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:472, Component Switching Limit:0)     REAL time: 31 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 31 secs 
+Total REAL time to Router completion: 31 secs 
+Total CPU time to Router completion: 29 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|system_i/processing_ |              |      |      |            |             |
+| system7_0_FCLK_CLK0 | BUFGCTRL_X0Y0| No   |   62 |  0.101     |  1.765      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_clk_fpga_0 = PERIOD TIMEGRP "clk_fpga_ | SETUP       |     4.006ns|     5.994ns|       0|           0
+  0" 100 MHz HIGH 50%                       | HOLD        |     0.008ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_axi_interconnect_1_reset_resync_ | SETUP       |         N/A|     1.118ns|     N/A|           0
+  path" TIG                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 32 secs 
+Total CPU time to PAR completion: 30 secs 
+
+Peak Memory Usage:  590 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file system_top.ncd
+
+
+
+PAR done!

@@ -1,0 +1,41 @@
+Running: C:\HDL\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/led4_axi_lite_slave_tb_isim_beh.exe -prj D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/led4_axi_lite_slave_tb_beh.prj work.led4_axi_lite_slave_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Master_BFM.v" into library work
+Analyzing Verilog file "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" into library work
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 38: Parameter declaration becomes local in AXI4_Lite_Master_BFM with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 39: Parameter declaration becomes local in AXI4_Lite_Master_BFM with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 40: Parameter declaration becomes local in AXI4_Lite_Master_BFM with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 42: Parameter declaration becomes local in AXI4_Lite_Master_BFM with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 43: Parameter declaration becomes local in AXI4_Lite_Master_BFM with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 44: Parameter declaration becomes local in AXI4_Lite_Master_BFM with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 47: Parameter declaration becomes local in AXI4_Lite_Master_BFM with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 48: Parameter declaration becomes local in AXI4_Lite_Master_BFM with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 49: Parameter declaration becomes local in AXI4_Lite_Master_BFM with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 50: Parameter declaration becomes local in AXI4_Lite_Master_BFM with formal parameter declaration list
+Analyzing Verilog file "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" into library work
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 104: Parameter declaration becomes local in led4_axi_lite_slave with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 105: Parameter declaration becomes local in led4_axi_lite_slave with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 106: Parameter declaration becomes local in led4_axi_lite_slave with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 107: Parameter declaration becomes local in led4_axi_lite_slave with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 110: Parameter declaration becomes local in led4_axi_lite_slave with formal parameter declaration list
+WARNING:HDLCompiler:693 - "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 116: Parameter declaration becomes local in led4_axi_lite_slave with formal parameter declaration list
+Analyzing Verilog file "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/led4_axi_lite_slave_tb.v" into library work
+Analyzing Verilog file "C:/HDL/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module led4_axi_lite_slave
+Compiling module AXI4_Master_BFM(DELAY=10)
+Compiling module AXI4_Lite_Master_BFM(DELAY=10)
+Compiling module clk_gen
+Compiling module reset_gen(RESET_STATE=1'b0,RESET...
+Compiling module led4_axi_lite_slave_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 7 Verilog Units
+Built simulation executable D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/led4_axi_lite_slave_tb_isim_beh.exe
+Fuse Memory Usage: 28244 KB
+Fuse CPU Usage: 763 ms

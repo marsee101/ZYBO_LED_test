@@ -1,0 +1,5 @@
+verilog work "simulaiton/AXI4_Master_BFM.v"
+verilog work "simulaiton/AXI4_Lite_Master_BFM.v"
+verilog work "../hdl/verilog/led4_axi_lite_slave.v"
+verilog work "led4_axi_lite_slave_tb.v"
+verilog work "C:/HDL/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 38: Parameter declaration becomes local in <arg fmt="%s" index="1">AXI4_Lite_Master_BFM</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 39: Parameter declaration becomes local in <arg fmt="%s" index="1">AXI4_Lite_Master_BFM</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 40: Parameter declaration becomes local in <arg fmt="%s" index="1">AXI4_Lite_Master_BFM</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 42: Parameter declaration becomes local in <arg fmt="%s" index="1">AXI4_Lite_Master_BFM</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 43: Parameter declaration becomes local in <arg fmt="%s" index="1">AXI4_Lite_Master_BFM</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 44: Parameter declaration becomes local in <arg fmt="%s" index="1">AXI4_Lite_Master_BFM</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 47: Parameter declaration becomes local in <arg fmt="%s" index="1">AXI4_Lite_Master_BFM</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 48: Parameter declaration becomes local in <arg fmt="%s" index="1">AXI4_Lite_Master_BFM</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 49: Parameter declaration becomes local in <arg fmt="%s" index="1">AXI4_Lite_Master_BFM</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/simulaiton/AXI4_Lite_Master_BFM.v" Line 50: Parameter declaration becomes local in <arg fmt="%s" index="1">AXI4_Lite_Master_BFM</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 104: Parameter declaration becomes local in <arg fmt="%s" index="1">led4_axi_lite_slave</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 105: Parameter declaration becomes local in <arg fmt="%s" index="1">led4_axi_lite_slave</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 106: Parameter declaration becomes local in <arg fmt="%s" index="1">led4_axi_lite_slave</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 107: Parameter declaration becomes local in <arg fmt="%s" index="1">led4_axi_lite_slave</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 110: Parameter declaration becomes local in <arg fmt="%s" index="1">led4_axi_lite_slave</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/pcores/led4_axi_lite_slave_v1_00_a/led4_axi_lite_slave/../hdl/verilog/led4_axi_lite_slave.v" Line 116: Parameter declaration becomes local in <arg fmt="%s" index="1">led4_axi_lite_slave</arg> with formal parameter declaration list
+</msg>
+
+</messages>
+

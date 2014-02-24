@@ -1,0 +1,684 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\HDL\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s
+1 -n 3 -fastpaths -xml system_top.twx system_top.ncd -o system_top.twr
+system_top.pcf
+
+Design file:              system_top.ncd
+Physical constraint file: system_top.pcf
+Device,package,speed:     xc7z010,clg400,C,-1 (PRODUCTION 1.08 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: PATH "TS_axi_interconnect_1_reset_resync_path" TIG;
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (SLICE_X12Y47.BX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     1.118ns (data path - clock path skew + uncertainty)
+  Source:               system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (FF)
+  Destination:          system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Data Path Delay:      1.083ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 to system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y47.AQ      Tcko                  0.518   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    SLICE_X12Y47.BX      net (fanout=1)        0.520   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<0>
+    SLICE_X12Y47.CLK     Tdick                 0.045   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.083ns (0.563ns logic, 0.520ns route)
+                                                       (52.0% logic, 48.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (SLICE_X12Y47.CX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     1.100ns (data path - clock path skew + uncertainty)
+  Source:               system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Destination:          system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (FF)
+  Data Path Delay:      1.065ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 to system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y47.BQ      Tcko                  0.518   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    SLICE_X12Y47.CX      net (fanout=1)        0.519   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<1>
+    SLICE_X12Y47.CLK     Tdick                 0.028   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.065ns (0.546ns logic, 0.519ns route)
+                                                       (51.3% logic, 48.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_axi_interconnect_1_reset_resync_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (SLICE_X12Y47.BX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.282ns (datapath - clock path skew - uncertainty)
+  Source:               system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (FF)
+  Destination:          system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Data Path Delay:      0.282ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 to system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y47.AQ      Tcko                  0.164   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    SLICE_X12Y47.BX      net (fanout=1)        0.170   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<0>
+    SLICE_X12Y47.CLK     Tckdi       (-Th)     0.052   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.282ns (0.112ns logic, 0.170ns route)
+                                                       (39.7% logic, 60.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (SLICE_X12Y47.CX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.271ns (datapath - clock path skew - uncertainty)
+  Source:               system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Destination:          system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (FF)
+  Data Path Delay:      0.271ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 to system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y47.BQ      Tcko                  0.164   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    SLICE_X12Y47.CX      net (fanout=1)        0.170   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<1>
+    SLICE_X12Y47.CLK     Tckdi       (-Th)     0.063   system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.271ns (0.101ns logic, 0.170ns route)
+                                                       (37.3% logic, 62.7% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_fpga_0 = PERIOD TIMEGRP "clk_fpga_0" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 4122 paths analyzed, 939 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.994ns.
+--------------------------------------------------------------------------------
+
+Paths for end point system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_3 (SLICE_X14Y57.CE), 45 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.006ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.684ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.275ns (1.489 - 1.764)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_3
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WVALID Tpsscko_MAXIGP0WVALID  1.334   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X10Y57.D1        net (fanout=3)        1.734   system_i/axi_interconnect_1_S_WVALID
+    SLICE_X10Y57.D         Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Counter_Load_Register_3
+                                                         system_i/axi_interconnect_1/axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/M_AXI_WVALID1
+    SLICE_X14Y57.A6        net (fanout=5)        0.483   system_i/axi_interconnect_1_M_WVALID
+    SLICE_X14Y57.A         Tilo                  0.124   LED4bit_3_OBUF
+                                                         system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o1
+    SLICE_X13Y57.D1        net (fanout=5)        0.875   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o
+    SLICE_X13Y57.D         Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Commannd_Register_0
+                                                         system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv1
+    SLICE_X14Y57.CE        net (fanout=3)        0.681   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv
+    SLICE_X14Y57.CLK       Tceck                 0.205   LED4bit_3_OBUF
+                                                         system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_3
+    ---------------------------------------------------  ---------------------------
+    Total                                        5.684ns (1.911ns logic, 3.773ns route)
+                                                         (33.6% logic, 66.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.283ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1 (FF)
+  Destination:          system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.616ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.066ns (0.779 - 0.845)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1 to system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y54.BQ       Tcko                  0.456   system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1
+    SLICE_X10Y54.A2      net (fanout=2)        0.837   system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1
+    SLICE_X10Y54.A       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Resgister<3>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_valid_i<1>1
+    SLICE_X10Y57.D5      net (fanout=3)        0.583   system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/n0367<1>
+    SLICE_X10Y57.D       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Counter_Load_Register_3
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/M_AXI_WVALID1
+    SLICE_X14Y57.A6      net (fanout=5)        0.483   system_i/axi_interconnect_1_M_WVALID
+    SLICE_X14Y57.A       Tilo                  0.124   LED4bit_3_OBUF
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o1
+    SLICE_X13Y57.D1      net (fanout=5)        0.875   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o
+    SLICE_X13Y57.D       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Commannd_Register_0
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv1
+    SLICE_X14Y57.CE      net (fanout=3)        0.681   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv
+    SLICE_X14Y57.CLK     Tceck                 0.205   LED4bit_3_OBUF
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_3
+    -------------------------------------------------  ---------------------------
+    Total                                      4.616ns (1.157ns logic, 3.459ns route)
+                                                       (25.1% logic, 74.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.334ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter_4 (FF)
+  Destination:          system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.564ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.067ns (0.779 - 0.846)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter_4 to system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y50.AQ       Tcko                  0.518   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter<7>
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter_4
+    SLICE_X9Y50.D1       net (fanout=2)        0.984   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter<4>
+    SLICE_X9Y50.D        Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>2
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>3
+    SLICE_X11Y55.A2      net (fanout=2)        1.023   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>2
+    SLICE_X11Y55.A       Tilo                  0.124   system_i/axi_interconnect_1/axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/read_active
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>7_1
+    SLICE_X13Y57.D3      net (fanout=1)        0.781   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>7
+    SLICE_X13Y57.D       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Commannd_Register_0
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv1
+    SLICE_X14Y57.CE      net (fanout=3)        0.681   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv
+    SLICE_X14Y57.CLK     Tceck                 0.205   LED4bit_3_OBUF
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_3
+    -------------------------------------------------  ---------------------------
+    Total                                      4.564ns (1.095ns logic, 3.469ns route)
+                                                       (24.0% logic, 76.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_2 (SLICE_X14Y56.CE), 45 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.191ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.500ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.274ns (1.490 - 1.764)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_2
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WVALID Tpsscko_MAXIGP0WVALID  1.334   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X10Y57.D1        net (fanout=3)        1.734   system_i/axi_interconnect_1_S_WVALID
+    SLICE_X10Y57.D         Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Counter_Load_Register_3
+                                                         system_i/axi_interconnect_1/axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/M_AXI_WVALID1
+    SLICE_X14Y57.A6        net (fanout=5)        0.483   system_i/axi_interconnect_1_M_WVALID
+    SLICE_X14Y57.A         Tilo                  0.124   LED4bit_3_OBUF
+                                                         system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o1
+    SLICE_X13Y57.D1        net (fanout=5)        0.875   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o
+    SLICE_X13Y57.D         Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Commannd_Register_0
+                                                         system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv1
+    SLICE_X14Y56.CE        net (fanout=3)        0.497   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv
+    SLICE_X14Y56.CLK       Tceck                 0.205   LED4bit_2_OBUF
+                                                         system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_2
+    ---------------------------------------------------  ---------------------------
+    Total                                        5.500ns (1.911ns logic, 3.589ns route)
+                                                         (34.7% logic, 65.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.468ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1 (FF)
+  Destination:          system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.432ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.065ns (0.780 - 0.845)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1 to system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y54.BQ       Tcko                  0.456   system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1
+    SLICE_X10Y54.A2      net (fanout=2)        0.837   system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1
+    SLICE_X10Y54.A       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Resgister<3>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_valid_i<1>1
+    SLICE_X10Y57.D5      net (fanout=3)        0.583   system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/n0367<1>
+    SLICE_X10Y57.D       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Counter_Load_Register_3
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/M_AXI_WVALID1
+    SLICE_X14Y57.A6      net (fanout=5)        0.483   system_i/axi_interconnect_1_M_WVALID
+    SLICE_X14Y57.A       Tilo                  0.124   LED4bit_3_OBUF
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o1
+    SLICE_X13Y57.D1      net (fanout=5)        0.875   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o
+    SLICE_X13Y57.D       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Commannd_Register_0
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv1
+    SLICE_X14Y56.CE      net (fanout=3)        0.497   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv
+    SLICE_X14Y56.CLK     Tceck                 0.205   LED4bit_2_OBUF
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.432ns (1.157ns logic, 3.275ns route)
+                                                       (26.1% logic, 73.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.519ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter_4 (FF)
+  Destination:          system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.380ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.066ns (0.780 - 0.846)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter_4 to system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y50.AQ       Tcko                  0.518   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter<7>
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter_4
+    SLICE_X9Y50.D1       net (fanout=2)        0.984   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter<4>
+    SLICE_X9Y50.D        Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>2
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>3
+    SLICE_X11Y55.A2      net (fanout=2)        1.023   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>2
+    SLICE_X11Y55.A       Tilo                  0.124   system_i/axi_interconnect_1/axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/read_active
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>7_1
+    SLICE_X13Y57.D3      net (fanout=1)        0.781   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>7
+    SLICE_X13Y57.D       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Commannd_Register_0
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv1
+    SLICE_X14Y56.CE      net (fanout=3)        0.497   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv
+    SLICE_X14Y56.CLK     Tceck                 0.205   LED4bit_2_OBUF
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.380ns (1.095ns logic, 3.285ns route)
+                                                       (25.0% logic, 75.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_0 (SLICE_X15Y57.CE), 45 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.195ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.495ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.275ns (1.489 - 1.764)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_0
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WVALID Tpsscko_MAXIGP0WVALID  1.334   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X10Y57.D1        net (fanout=3)        1.734   system_i/axi_interconnect_1_S_WVALID
+    SLICE_X10Y57.D         Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Counter_Load_Register_3
+                                                         system_i/axi_interconnect_1/axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/M_AXI_WVALID1
+    SLICE_X14Y57.A6        net (fanout=5)        0.483   system_i/axi_interconnect_1_M_WVALID
+    SLICE_X14Y57.A         Tilo                  0.124   LED4bit_3_OBUF
+                                                         system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o1
+    SLICE_X13Y57.D1        net (fanout=5)        0.875   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o
+    SLICE_X13Y57.D         Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Commannd_Register_0
+                                                         system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv1
+    SLICE_X15Y57.CE        net (fanout=3)        0.492   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv
+    SLICE_X15Y57.CLK       Tceck                 0.205   LED4bit_1_OBUF
+                                                         system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_0
+    ---------------------------------------------------  ---------------------------
+    Total                                        5.495ns (1.911ns logic, 3.584ns route)
+                                                         (34.8% logic, 65.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.472ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1 (FF)
+  Destination:          system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.427ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.066ns (0.779 - 0.845)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1 to system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y54.BQ       Tcko                  0.456   system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1
+    SLICE_X10Y54.A2      net (fanout=2)        0.837   system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1
+    SLICE_X10Y54.A       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Resgister<3>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_valid_i<1>1
+    SLICE_X10Y57.D5      net (fanout=3)        0.583   system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/n0367<1>
+    SLICE_X10Y57.D       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Counter_Load_Register_3
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/M_AXI_WVALID1
+    SLICE_X14Y57.A6      net (fanout=5)        0.483   system_i/axi_interconnect_1_M_WVALID
+    SLICE_X14Y57.A       Tilo                  0.124   LED4bit_3_OBUF
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o1
+    SLICE_X13Y57.D1      net (fanout=5)        0.875   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/S_AXI_WVALID_awaddr_hold[3]_AND_9_o
+    SLICE_X13Y57.D       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Commannd_Register_0
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv1
+    SLICE_X15Y57.CE      net (fanout=3)        0.492   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv
+    SLICE_X15Y57.CLK     Tceck                 0.205   LED4bit_1_OBUF
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_0
+    -------------------------------------------------  ---------------------------
+    Total                                      4.427ns (1.157ns logic, 3.270ns route)
+                                                       (26.1% logic, 73.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.523ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter_4 (FF)
+  Destination:          system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.375ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.067ns (0.779 - 0.846)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter_4 to system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y50.AQ       Tcko                  0.518   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter<7>
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter_4
+    SLICE_X9Y50.D1       net (fanout=2)        0.984   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter<4>
+    SLICE_X9Y50.D        Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>2
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>3
+    SLICE_X11Y55.A2      net (fanout=2)        1.023   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>2
+    SLICE_X11Y55.A       Tilo                  0.124   system_i/axi_interconnect_1/axi_interconnect_1/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/read_active
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>7_1
+    SLICE_X13Y57.D3      net (fanout=1)        0.781   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Counter[31]_GND_2_o_equal_50_o<31>7
+    SLICE_X13Y57.D       Tilo                  0.124   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/Commannd_Register_0
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv1
+    SLICE_X15Y57.CE      net (fanout=3)        0.492   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/_n0342_inv
+    SLICE_X15Y57.CLK     Tceck                 0.205   LED4bit_1_OBUF
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Display_Counter_0
+    -------------------------------------------------  ---------------------------
+    Total                                      4.375ns (1.095ns logic, 3.280ns route)
+                                                       (25.0% logic, 75.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk_fpga_0 = PERIOD TIMEGRP "clk_fpga_0" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/rdata_12 (SLICE_X3Y49.D5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.008ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Resgister_12 (FF)
+  Destination:          system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/rdata_12 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.278ns (Levels of Logic = 1)
+  Clock Path Skew:      0.270ns (0.853 - 0.583)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Resgister_12 to system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/rdata_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y51.AQ       Tcko                  0.141   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Resgister<15>
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Resgister_12
+    SLICE_X3Y49.D5       net (fanout=2)        0.195   system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/LED_Interval_Resgister<12>
+    SLICE_X3Y49.CLK      Tah         (-Th)     0.058   system_i/axi_interconnect_1_M_RDATA<9>
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/mux3111
+                                                       system_i/led4_axi_lite_slave_0/led4_axi_lite_slave_0/rdata_12
+    -------------------------------------------------  ---------------------------
+    Total                                      0.278ns (0.083ns logic, 0.195ns route)
+                                                       (29.9% logic, 70.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point system_i/processing_system7_0/processing_system7_0/PS7_i (PS7_X0Y0.MAXIGP0BID10), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.019ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i_10 (FF)
+  Destination:          system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Requirement:          0.000ns
+  Data Path Delay:      0.330ns (Levels of Logic = 0)
+  Clock Path Skew:      0.311ns (0.892 - 0.581)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i_10 to system_i/processing_system7_0/processing_system7_0/PS7_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y50.CQ       Tcko                  0.141   system_i/axi_interconnect_1_S_BID<11>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i_10
+    PS7_X0Y0.MAXIGP0BID10net (fanout=2)        0.189   system_i/axi_interconnect_1_S_BID<10>
+    PS7_X0Y0.MAXIGP0ACLK Tpssckd_MAXIGP0BID(-Th)     0.000   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                       system_i/processing_system7_0/processing_system7_0/PS7_i
+    -------------------------------------------------  ---------------------------
+    Total                                      0.330ns (0.141ns logic, 0.189ns route)
+                                                       (42.7% logic, 57.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point system_i/processing_system7_0/processing_system7_0/PS7_i (PS7_X0Y0.MAXIGP0BID9), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.020ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i_9 (FF)
+  Destination:          system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Requirement:          0.000ns
+  Data Path Delay:      0.331ns (Levels of Logic = 0)
+  Clock Path Skew:      0.311ns (0.892 - 0.581)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i_9 to system_i/processing_system7_0/processing_system7_0/PS7_i
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y50.BQ       Tcko                  0.141   system_i/axi_interconnect_1_S_BID<11>
+                                                       system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i_9
+    PS7_X0Y0.MAXIGP0BID9 net (fanout=2)        0.190   system_i/axi_interconnect_1_S_BID<9>
+    PS7_X0Y0.MAXIGP0ACLK Tpssckd_MAXIGP0BID(-Th)     0.000   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                       system_i/processing_system7_0/processing_system7_0/PS7_i
+    -------------------------------------------------  ---------------------------
+    Total                                      0.331ns (0.141ns logic, 0.190ns route)
+                                                       (42.6% logic, 57.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_fpga_0 = PERIOD TIMEGRP "clk_fpga_0" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 9.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.500ns (Tcl)
+  Physical resource: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.gen_decerr.decerr_slave_inst/read_cnt<3>/CLK
+  Logical resource: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.gen_decerr.decerr_slave_inst/read_cnt_0/CK
+  Location pin: SLICE_X6Y56.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 9.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.500ns (Tch)
+  Physical resource: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.gen_decerr.decerr_slave_inst/read_cnt<3>/CLK
+  Logical resource: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.gen_decerr.decerr_slave_inst/read_cnt_0/CK
+  Location pin: SLICE_X6Y56.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 9.000ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.000ns (1000.000MHz) (Tcp)
+  Physical resource: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.gen_decerr.decerr_slave_inst/read_cnt<3>/CLK
+  Logical resource: system_i/axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.gen_decerr.decerr_slave_inst/read_cnt_0/CK
+  Location pin: SLICE_X6Y56.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+No constraints were found to generate data for the Data Sheet Report section.
+Use the Advanced Analysis (-a) option or generate global constraints for each
+clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 4124 paths, 0 nets, and 1199 connections
+
+Design statistics:
+   Minimum period:   5.994ns{1}   (Maximum frequency: 166.833MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed SUN 23 FEB 11:50:33 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 529 MB
+
+
+

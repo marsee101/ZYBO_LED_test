@@ -1,0 +1,28 @@
+Command line:
+   led4_axi_lite_slave_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63241
+
+Mon Feb 24 04:49:49 2014
+
+
+ Elaboration Time: 0.078001 sec
+
+ Current Memory Usage: 663.388 Meg
+
+ Total Signals          : 91
+ Total Nets             : 237
+ Total Signal Drivers   : 53
+ Total Blocks           : 29
+ Total Primitive Blocks : 12
+ Total Processes        : 78
+ Total Traceable Variables  : 165
+ Total Scalar Nets and Variables : 1805
+
+ Total Simulation Time: 0.078001 sec
+
+ Current Memory Usage: 663.388 Meg
+
+Mon Feb 24 04:50:01 2014
+

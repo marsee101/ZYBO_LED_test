@@ -1,0 +1,39 @@
+12:16:25.065 INFO  - Processing command line option -hwspec D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/SDK/SDK_Export/hw/system.xml. 
+20:43:44.084 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:43:44.184 INFO  - PS initialization will be done as it is not done before. 
+20:43:44.187 INFO  - Running PS initialization.... 
+20:43:44.945 INFO  - ps7_init is completed. 
+20:43:45.171 INFO  - ps7_post_config is completed. 
+20:43:45.370 INFO  - PS Initialization is complete. 
+20:43:50.667 INFO  - FPGA configured successfully with bitstream "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/SDK/SDK_Export/system_hw_platform/system.bit" 
+20:43:51.095 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Invalid Target ID
+    Target '64' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+20:44:14.982 INFO  - Processor reset is completed for ps7_cortexa9_0 
+04:51:52.491 INFO  - FPGA configured successfully with bitstream "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/SDK/SDK_Export/system_hw_platform/system.bit" 
+04:52:28.784 INFO  - Processor reset is completed for ps7_cortexa9_0 
+04:52:28.884 INFO  - PS initialization will be done as it is not done before. 
+04:52:28.884 INFO  - Running PS initialization.... 
+04:52:29.250 INFO  - ps7_init is completed. 
+04:52:29.350 INFO  - ps7_post_config is completed. 
+04:52:29.450 INFO  - PS Initialization is complete. 
+05:32:29.749 INFO  - FPGA configured successfully with bitstream "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/SDK/SDK_Export/system_hw_platform/system.bit" 
+05:32:49.458 INFO  - Processor reset is completed for ps7_cortexa9_0 
+05:32:49.558 INFO  - PS initialization will be done as it is not done before. 
+05:32:49.558 INFO  - Running PS initialization.... 
+05:32:49.952 INFO  - ps7_init is completed. 
+05:32:50.052 INFO  - ps7_post_config is completed. 
+05:32:50.152 INFO  - PS Initialization is complete. 
+06:47:11.893 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+18:38:27.457 INFO  - FPGA configured successfully with bitstream "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system/SDK/SDK_Export/system_hw_platform/system.bit" 
+18:38:52.110 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:38:52.210 INFO  - PS initialization will be done as it is not done before. 
+18:38:52.210 INFO  - Running PS initialization.... 
+18:38:52.589 INFO  - ps7_init is completed. 
+18:38:52.689 INFO  - ps7_post_config is completed. 
+18:38:52.789 INFO  - PS Initialization is complete. 
+18:54:45.710 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

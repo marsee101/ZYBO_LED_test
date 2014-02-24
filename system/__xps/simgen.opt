@@ -1,0 +1,1 @@
+ -p zynq -lang verilog$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X D:/HDL/FndtnISEWork/Zynq-7000/ZedBoard/test/lap_filt_axim_test/system/

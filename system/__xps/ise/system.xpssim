@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<Simulation_deps>
+
+  <Version XPSPNVER="1.0" EDKVER="14.7" />
+  <FPGA family="zynq" device="xc7z010" package="clg400" speedgrade="-1" />
+  <File Type="MHS" URL="../../system.mhs" />
+
+
+</Simulation_deps>

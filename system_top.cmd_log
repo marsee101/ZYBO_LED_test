@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system_top.xst" -ofn "D:/HDL/FndtnISEWork/Zynq-7000/ZYBO/ZYBO_LED_test/system_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm edkBmmFile.bmm -p xc7z010-clg400-1 system_top.ngc system_top.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o system_top_map.ncd system_top.ngd system_top.pcf 
+par -w -intstyle ise -ol high -mt off system_top_map.ncd system_top.ncd system_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml system_top.twx system_top.ncd -o system_top.twr system_top.pcf 
+bitgen -intstyle ise -f system_top.ut system_top.ncd 
