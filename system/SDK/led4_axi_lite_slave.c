@@ -7,7 +7,6 @@
 
 #include <stdio.h>
 #include "xil_types.h"
-#include "xtmrctr.h"
 #include "xparameters.h"
 #include "xil_io.h"
 #include "xil_exception.h"
